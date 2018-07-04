@@ -1,5 +1,5 @@
 x github
-x const
+x constants
 x if then else
 switch
 UserInput
@@ -9,8 +9,8 @@ Object
 
 Arrays
 increment
-while
-for
+x while
+x for
 classes
 Math.round
 MessageDialog

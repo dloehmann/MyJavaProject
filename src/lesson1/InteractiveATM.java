@@ -1,6 +1,9 @@
 package lesson1;
 
-public class ATM {
+// import command line scanner
+import java.util.Scanner;
+
+public class InteractiveATM {
 
 	// never ever store pins in code!
 	public static final String PIN = "1234"; 	// Constant value
@@ -10,12 +13,20 @@ public class ATM {
 
 
 	public static void main(String[] args) {
-		insertCard();
-		String result = enterPin("1235");
-		System.out.println(result);
-		chooseAmount(1000);
-		takeCard();
-		takeMoney(1000);
+		// command line scanner imported from java.util package
+        Scanner scannerVariable = new Scanner(System.in);
+        String pin;
+        System.out.println("Type in your PIN.");
+
+        pin = scannerVariable.nextLine();
+        System.out.println("User input: " + pin);
+
+//		insertCard();
+//		String result = enterPin("1235");
+//		System.out.println(result);
+//		chooseAmount(1000);
+//		takeCard();
+//		takeMoney(1000);
 	}
 
 	private static void takeMoney(int amount) {
@@ -37,7 +48,7 @@ public class ATM {
 		}
 		
 		// counting loop
-		for (int i = 0; i<3; i=i+1) {
+		for (int i = 0; i<3; i++) {
 			System.out.println("Fetch 200 R ");
 			c++; // counting all the notes
 		}
