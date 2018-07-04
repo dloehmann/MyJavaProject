@@ -6,10 +6,13 @@ public class MainForMethods {
 	 */
 	public static void main(String[] args) {
 		// My fancy program
-		makeCoffee(3);
+		int numberOfPersons = 3;
+		makeBlackCoffeeFor(numberOfPersons);
+		makeWhiteCoffeeFor(6);
 	}
 
-	public static void makeCoffee(int persons) {
+	private static void makeBlackCoffeeFor(int persons) {
+		System.out.println("Make a black coffee!");
 		// how much powder is needed?
 		int powder = normal(persons);
 		// fill powder amount
@@ -19,16 +22,32 @@ public class MainForMethods {
 		// press button
 		pressButton();
 	}
-	
+
+	public static void makeWhiteCoffeeFor(int persons) {
+		System.out.println("Make a white coffee!");
+		// how much powder is needed?
+		int powder = normal(persons);
+		// fill powder amount
+		fillPowder(powder);
+		// fill water amount
+		fillWater(big(persons));
+		// fill milk
+		fillMilk(10);
+		// press button
+		pressButton();
+	}
+
+	public static int normalCoffee = 4;
+	// calculate powder for a normal coffee
+	public static int normal(int persons) {
+		return persons*2;
+	}
+
 	// calculate powder for a strong coffee
 	public static int strong(int persons) {
 		return persons*3;
 	}
 
-	// calculate powder for a normal coffee
-	public static int normal(int persons) {
-		return persons*2;
-	}
 
 	// calculate water for a small cup
 	public static int small(int persons) {
@@ -48,6 +67,12 @@ public class MainForMethods {
 	// fill the water
 	public static void fillWater(int ml) {
 		String s = "Fill Water!" + ml + " ml";
+		System.out.println(s)	;
+		
+	}
+	
+	public static void fillMilk(int ml) {
+		String s = "Fill Milk!" + ml + " ml";
 		System.out.println(s)	;
 		
 	}

@@ -1,5 +1,7 @@
 package lesson1;
 
+import java.util.Scanner;
+
 public class MainForMethodsWithUserEntry {
 	/** 
 	 * This is the main method
@@ -10,6 +12,11 @@ public class MainForMethodsWithUserEntry {
 	}
 
 	public static void makeCoffee(int persons) {
+		// change for git
+        System.out.println("Want your coffee strong or normal?");
+        Scanner scannerVariable = new Scanner(System.in);
+        System.out.println("User input: " + scannerVariable.nextLine());
+ 
 		// how much powder is needed?
 		int powder = normal(persons);
 		// fill powder amount
@@ -57,5 +64,7 @@ public class MainForMethodsWithUserEntry {
 		System.out.println("Press Button!")	;
 		
 	}
+	
+	
 
 }
