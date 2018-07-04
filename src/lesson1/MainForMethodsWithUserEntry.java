@@ -1,6 +1,6 @@
 package lesson1;
 
-public class MainForMethods {
+public class MainForMethodsWithUserEntry {
 	/** 
 	 * This is the main method
 	 */
