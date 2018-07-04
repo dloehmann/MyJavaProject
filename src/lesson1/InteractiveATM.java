@@ -15,6 +15,7 @@ public class InteractiveATM {
 	public static void main(String[] args) {
 		// command line scanner imported from java.util package
         Scanner scannerVariable = new Scanner(System.in);
+        
         String pin;
         System.out.println("Type in your PIN.");
 
