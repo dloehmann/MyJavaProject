@@ -22,7 +22,6 @@ public class ATM {
 
 	private static void fetchNotesFromCase(int amount) {
 		System.out.println("Fetch Notes from case: " + amount + " R ");
-
 	}
 
 	private static void takeCard() {
